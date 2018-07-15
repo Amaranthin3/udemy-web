@@ -7,13 +7,48 @@
 
 	<h1>Inputs</h1>
 
-<!-- 	radio button
+<!--radio button
 	select tag
 	textarea tag
  -->
 
- 	<input type="radio" />
- 	<input type="checkbox" />
+ 	<p>Do prefer cats or dogs?</p>
+
+ 	<form>
+	 	<label for="Dogs"> Dogs: </label>
+	 	<input id="Dogs" type="radio" name="petChoice" value="DOGS"/>
+
+	 	<label for="Cats"> Cats: </label>
+	 	<input id="Cats" type="radio" name="petChoice" value="CATS"/>
+
+	 <p>Whats your favourite colour?</p>
+
+	 	<select name="colour">
+	 		<option>Red</option>
+	 		<option>Orange</option>
+	 		<option>Blue</option>
+	 	</select>
+
+	 <p>What's your current mood?</p>
+
+	 	<select name="moods">
+	 		<option value="sad"> :( </option>
+	 		<option value="neutral"> :| </option>
+	 		<option value="happy"> :) </option>
+	 	</select>
+
+	 <div>
+	 	<textarea name="paragraph" rows="15" cols="55">Insert here</textarea>
+	 </div>
+
+	 	<button>GO!</button>
+
+ 	</form>	
+
+
+
+
+ 	<!-- input type="checkbox" /> -->
 
 </body>
 </html>
