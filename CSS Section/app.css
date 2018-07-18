@@ -1,12 +1,23 @@
 h1 {
 	color: red;
+/*	border-color: #D9DAE7;
+	border-width: 4px;
+	border-style: ridge;*/
+	border: 3px ridge #D9DAE7;
 }
 
 li {
-	color: green;
+	color: #4C53B6;	/*hexadecimal*/
 }
 
 h4 {
-	color: purple;
+	color:  #C8387A;
+	background: rgba(223, 36, 148, 0.2);   /*transparent*/ 
 }
 
+body {
+	/*background: #8FD7E1;*/
+	background: url(http://hdqwalls.com/wallpapers/mountains-moon-trees-minimalism-hd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
