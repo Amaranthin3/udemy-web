@@ -1,11 +1,44 @@
-/*li {
-	border: 2px solid pink;
+/*Element*/
+
+li {
+
 }
 
-#third {
+/*Class - For 2+ Elements*/
+.hello {
+
+}
+
+/*ID - One Element*/
+#name {
+
+}
+
+/*Star - Applies to everything in the page*/
+* {
+	border: 1px solid lightgray;
+}
+
+/*Descendant Selector - Descendants of a specific element*/
+
+li a {
+	color: rgb(0, 204, 102);
+}
+
+/*Adjacent Selector - Next to another element not indented*/
+
+h4 + ul {
+	border: 4px solid red;
+}
+
+/*Attribute Selector - based off attribues*/
+
+a[href="http://www.google.com"] {
+	background: blue;
+}
+
+/*nth of type - Every number in a sequence*/
+
+ul:nth-of-type(3) {
 	background: pink;
 }
-
-.completed {
-	text-decoration: line-through;
-}*/
