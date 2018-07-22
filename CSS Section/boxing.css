@@ -11,7 +11,23 @@ border: 2px solid blue;
 
 /*Padding*/
 
+padding: 50px;
+
 /*Margin*/	
+
+/*margin: 100px;*/
+
+				/*top right bottom left margins */
+
+margin: 20px 40px 300px 100px; 
+
+				/*left+right = 50 / top+bottom= 20*/
+
+/*margin: 50px 20px;  
+
+				zero margin top+bottom auto on sides
+
+margin: 0 auto 0 auto;  /// margin: 0 auto;*/
 
 }
 
