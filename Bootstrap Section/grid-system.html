@@ -12,7 +12,7 @@
 			}
 
 			.red {
-				border: 2px dotted red;
+				border: 1px solid red;
 			}
 		</style>
 
@@ -20,17 +20,42 @@
 	<body>
 
 		<div class="container">
+
 			<div class="row">
-				<div class="col-lg-2 pink">First Col</div>
-				<div class="col-lg-8 pink">Second Col</div>
-				<div class="col-lg-2 pink">Third Col</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 red">Another Col</div>
-				<div class="col-lg-4 red">Another Col</div>
-				<div class="col-lg-4 red">Another Col</div>
+				<div class="col-lg-3 col-sm-6 red">
+					<!-- Splitting the first column in two -->
+					<div class="row">
+						<div class="col-lg-6 pink">First Half</div>
+						<div class="col-lg-6 pink">Other Half</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 red">Another Col</div>
+				<div class="col-lg-3 col-sm-6 red">Another Col</div>
+				<div class="col-lg-3 col-sm-6 red">
+					<div class="row">
+						<div class="col-lg-2 pink"> 1 </div>
+						<div class="col-lg-2 pink"> 2 </div>
+						<div class="col-lg-2 pink"> 3 </div>
+						<div class="col-lg-2 pink"> 4 </div>
+						<div class="col-lg-2 pink"> 5 </div>
+						<div class="col-lg-2 pink"> 6 </div>
+					</div>
+				</div>
 			</div>
 		</div>
-
+<!-- 			<div class="row">
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+				<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			</div> -->
 	</body>
 </html>
