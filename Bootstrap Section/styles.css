@@ -2,3 +2,26 @@
 	display: flex;
 	flex-wrap: wrap;
 	}
+
+.jumbotron {
+	font-family: 'M PLUS 1p', sans-serif;
+	color: #4C6083;
+	background: #D5D4DB;
+}
+
+body {
+	padding-top: 70px;
+}
+
+.navbar-inverse {
+	background-color: #6E798D;
+	
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #ECD6F2;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #F3EBF5;
+}
