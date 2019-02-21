@@ -11,3 +11,5 @@ function greet(person1, person2, person3) {
 function square(num) {
 	console.log(num*num);
 }
+
+.
