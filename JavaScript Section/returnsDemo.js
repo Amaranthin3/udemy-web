@@ -1,3 +1,9 @@
+//Instead of console.log you return a value
+
+function square(num) {
+	return num * num;
+}
+
 //Function capitalizes the first character in a string
 function capitalize(string) {
 	if(typeof string === "number") {
