@@ -33,7 +33,7 @@ movies.forEach(function(movie){
 	result += "\"" + movie.title + "\" - ";
 	result += movie.rating +" stars";
 	console.log(result)
-})
+});
 
 
 //RETURNS
