@@ -13,7 +13,20 @@ var posts = [
 		comments: ["Amazing", "Genius"]
 	}
 ]
-
 //to retrieve the second Object post and second Comment. 
 posts[1].comments[1]
+
+//to retrieve Malfoy
+var someObject = {
+	friends: [
+		{name: "Malfoy"},
+		{name: "Crabbe"},
+		{name: "Goyle"},
+	],
+	color: "baby blue",
+	isEvil: "true",
+};
+
+someObject.friends[0].name
+
 
