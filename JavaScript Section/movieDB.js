@@ -23,6 +23,21 @@ var movies = [
 	}
 ];
 
+for (var i = 0; i < movies.length; i++){
+	var result = "You have ";
+	
+	if(movies[i].hasWatched) {
+		result += "watched ";
+	} else {
+		result += "not seen ";
+	}
+
+	result += "\"" + movie.title + "\" - ";
+	result += movie.rating +" stars";
+
+	console.log(result)
+}
+
 movies.forEach(function(movie){
 	var result = "You have ";
 	if(movie.hasWatched){
