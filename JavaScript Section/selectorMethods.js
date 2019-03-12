@@ -18,3 +18,10 @@ var tag = document.querySelector("#highlight");
 //querySelectorAll
 //returns a list that matches a given CSS-style selector
 var tag = document.querySelectorAll("h1");
+
+//************Selector Exercise***************
+//4 different ways to select the <p> tag - Selector Methods
+var tag = document.getElementsByTagName("p")[0];
+var tag = document.getElementById("first");
+var tag = document.getElementsByClassName("special")[0];
+var tag = document.querySelector("#first");
