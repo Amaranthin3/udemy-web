@@ -27,3 +27,14 @@ tag.textContent = "A different Heading";
 var tag = document.querySelector("h1");
 tag.innerHTML
 
+//**********Attributes****************
+//getAttribute and setAttribute to manipulate scr / href
+<a href="www.google.com">I am a Link</a>
+<img src="logo.png">
+//
+var link = document.querySelector("a");
+link.getAttribute("href");
+link.setAttribute("href", "http://www.dogs.com");
+
+var img = document.querySelector("img");
+img.setAttribute("src", "corgi.png");
