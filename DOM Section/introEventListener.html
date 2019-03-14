@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEMO ONLY</title>
+
+	<script type="text/javascript">
+		
+	/*	Looping through a list of LI's */
+
+	var list = document.querySelectorAll("li");
+
+	for ( var i = 0; i < list.length; i++){
+		list[i].addEventListener("click", function(){
+			this.style.color="blue";
+		});
+	}	
+
+	</script>
+</head>
+<body>
+
+	<ul>
+		<li>Flower Types</li>
+		<li>Bee Pollination</li>
+		<li>End of the world</li>
+	</ul>
+
+</body>
+</html>
