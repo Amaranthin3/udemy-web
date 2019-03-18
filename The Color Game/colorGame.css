@@ -1,0 +1,22 @@
+/*Containers take up 30% of the container */
+.square {
+	width: 30%;
+	background: pink;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+}
+
+#container {
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+body {
+	background: black; 
+}
+
+h1 {
+	color: white;
+}
+
