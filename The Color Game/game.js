@@ -1,16 +1,12 @@
 //Looping through the containers to assign colors.
-var colors = [
-	"rgb(255, 0, 0)",
-	"rgb(255, 255, 0)",
-	"rgb(0, 255, 0)",
-	"rgb(0, 255, 255)",
-	"rgb(0, 0, 255)",
-	"rgb(255, 0, 255)",
-]
+var colors = generateRandomColors(6);
+
 var squares = document.querySelectorAll(".square");
-var pickedColor = pickColor;
+var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
+var h1 = document.querySelector("h1");
+var resetButton = document.querySelector("#reset");
 
 //Color picked must update with the colorDisplay
 colorDisplay.textContent = pickedColor;
@@ -24,10 +20,11 @@ for(var i = 0; i < squares.length; i++){
 //If clicked wrong the square fades to background
 	squares[i].addEventListener("click", function(){
 		var clickedColor = this.style.backgroundColor;
-
 		if(clickedColor === pickedColor){
 			messageDisplay.textContent = "Correct!";
+			resetButton.textContent ="Play Again?";
 			changeColors(clickedColor);
+			h1.style.background = clickedColor;
 		} else {
 			this.style.background = "#2F2C2B";
 			messageDisplay.textContent = "Try Again!";
@@ -48,3 +45,36 @@ function pickColor(){
 	var random = Math.floor(Math.random() * colors.length);
 	return colors[random];
 }
+
+//Make an array. Add num random colors to the array
+//Get random color and push into the array
+//Return that array
+function generateRandomColors(num){
+	var arr = []
+	for (var i=0; i < num; i++){
+		arr.push(randomColor())
+	}
+	return arr;
+}
+
+//Pick red, green and blue from 0 to 255
+function randomColor(){
+	var red = Math.floor(Math.random() * 256);
+	var green = Math.floor(Math.random() * 256);
+	var blue = Math.floor(Math.random() * 256);
+	return "rgb(" + red + ", " + green + ", " + blue + ")";
+}
+
+//Generate all new colors 
+//Pick a new random color from the array
+//Change colorDisplay to match picked color 
+//Change color of squares 
+resetButton.addEventListener("click", function(){
+	colors = generateRandomColors(6);
+	pickedColor = pickColor();
+	colorDisplay.textContent = pickedColor;
+	for (var i = 0; i < squares.length; i++){
+		squares[i].style.background = colors[i];
+	}
+	h1.style.background = "#2F2C2B";
+});
