@@ -13,10 +13,13 @@
 }
 
 body {
-	background: black; 
+	background: #2F2C2B; 
 }
 
 h1 {
 	color: white;
 }
 
+span {
+	color: white;
+}
