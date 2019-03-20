@@ -73,7 +73,9 @@ function randomColor(){
 resetButton.addEventListener("click", function(){
 	colors = generateRandomColors(numSquares);
 	pickedColor = pickColor();
+	messageDisplay.textContent = "";
 	colorDisplay.textContent = pickedColor;
+	this.textContent = "New Colors";
 	for (var i = 0; i < squares.length; i++){
 		squares[i].style.background = colors[i];
 	}
