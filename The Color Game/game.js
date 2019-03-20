@@ -77,7 +77,7 @@ resetButton.addEventListener("click", function(){
 	for (var i = 0; i < squares.length; i++){
 		squares[i].style.background = colors[i];
 	}
-	h1.style.background = "#2F2C2B";
+	h1.style.background = "steelblue";
 });
 
 //Highlighting the Easy and Hard Buttons
