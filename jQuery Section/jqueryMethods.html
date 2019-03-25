@@ -2,7 +2,27 @@
 <html>
 <head>
 	<title>jQuery Methods</title>
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<style type="text/css">
+
+		.correct {
+			color: green;
+		}
+
+		.wrong {
+			color: red;
+			background: pink;
+		}
+
+		.done {
+			color: grey;
+			text-decoration: line-through;
+		}
+
+	</style>
+
 </head>
 <body>
 
@@ -17,5 +37,37 @@
 		<li>Violets</li>
 	</ul>
 
+	<select>
+		<option>Lizard</option>
+		<option>Phoenix</option>
+		<option>Monkey</option>
+		<option>Hippo</option>
+	</select>
+
+	<img src="https://www.jontremaine.com/wp-content/uploads/2017/11/Red-Stag.jpg">
+
+	<script type="text/javascript">
+		//Text Content
+		$("h1").text("A New Heading");
+		//HTML updates and replaces all li's
+		$("ul").html("<li>Bushes</li><li>Trees</li><li>Shrubs</li>");
+		//Attributes - Images etc (Changing the images source)
+		$("img").attr("src", "https://thumbor.forbes.com/thumbor/1280x868/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1007655361%2F960x0.jpg%3Ffit%3Dscale");
+		//Changine text attribute to color
+		$("input").attr("type", "checkbox");
+		//Retrieves the last element 
+		$("li").last().text("Palm Trees");
+		//Val returns value that is selected/input. Can also be used to reset. 
+		$("input").val();
+		$("select").val();
+		//ADD Class
+		$("h1").addClass("correct");
+		$("li").addClass("wrong");
+		//REMOVE Class
+		$("h1").removeClass("correct");
+		//TOGGLE Class
+		$("li").first().toggleClass("done");
+
+	</script>
 </body>
 </html>
