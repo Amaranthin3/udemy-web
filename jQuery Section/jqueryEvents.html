@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Events</title>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+
+	<h1>jQuery Events</h1>
+
+	<button>Don't Click Me</button>
+	<button>Really Don't</button>
+	<button>Please Please Don't</button>
+
+	<script type="text/javascript">
+		//Click Listener
+		$("h1").click(function(){
+			alert("clicked");
+		});
+
+		$("button").last().click(function(){
+			$(this).css("background","pink")
+		});
+
+		$("button").click(function(){
+			var text = $(this).text();
+			console.log("You clicked " + text)
+		});
+
+
+
+	</script>
+</body>
+</html>
