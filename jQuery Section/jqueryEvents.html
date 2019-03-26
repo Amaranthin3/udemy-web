@@ -9,10 +9,16 @@
 <body>
 
 	<h1>jQuery Events</h1>
-
-	<button>Don't Click Me</button>
-	<button>Really Don't</button>
-	<button>Please Please Don't</button>
+	<div>
+		<input type="text">
+	</div>
+	
+	<div>
+		<button>Don't Click Me</button>
+		<button>Really Don't</button>
+		<button>Please Please Don't</button>
+	</div>
+		
 
 	<script type="text/javascript">
 		//Click Listener
@@ -29,7 +35,12 @@
 			console.log("You clicked " + text)
 		});
 
-
+		//Keypress Event. Pressing ENTER (which = 13)
+		$('input[type="text"]').keypress(function(event){
+			if(event.which === 13){
+				alert("You hit ENTER");
+			}
+		});
 
 	</script>
 </body>
