@@ -22,24 +22,41 @@
 
 	<script type="text/javascript">
 		//Click Listener
-		$("h1").click(function(){
-			alert("clicked");
+		// $("h1").click(function(){
+		// 	alert("clicked");
+		// });
+
+		// $("button").last().click(function(){
+		// 	$(this).css("background","pink")
+		// });
+
+		// $("button").click(function(){
+		// 	var text = $(this).text();
+		// 	console.log("You clicked " + text)
+		// });
+
+		// Keypress Event. Pressing ENTER (which = 13)
+		// $('input[type="text"]').keypress(function(event){
+		// 	if(event.which === 13){
+		// 		alert("You hit ENTER");
+		// 	}
+		// });
+
+		//on(). Supports click, dblclick, drag start, keypress
+		$("h1").on("click", function(){
+			$(this).css("color","purple");			
 		});
 
-		$("button").last().click(function(){
-			$(this).css("background","pink")
+		$('input[type="text"]').on("keypress", function(){
+			console.log("Keypressed");
 		});
 
-		$("button").click(function(){
-			var text = $(this).text();
-			console.log("You clicked " + text)
+		$("button").on("mouseenter", function(){
+			$(this).css("font-weight", "bold");
 		});
 
-		//Keypress Event. Pressing ENTER (which = 13)
-		$('input[type="text"]').keypress(function(event){
-			if(event.which === 13){
-				alert("You hit ENTER");
-			}
+		$("button").on("mouseleave", function(){
+			$(this).css("font-weight", "normal");
 		});
 
 	</script>
