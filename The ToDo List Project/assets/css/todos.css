@@ -22,7 +22,7 @@ h1 {
 
 #container {
 	width: 360px;
-	margin: 100px auto;
+	margin: 200px auto;
 	box-shadow: 0px 0px 145px 21px rgba(0,0,0,0.33);
 	background: #d2dff4;
 
@@ -50,6 +50,23 @@ li {
  	background: #d2dff4;
  }
 
+ li span {
+	background: #c61411;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
  input {
  	font-size: 18px;
  	background-color: #d2dff4;
@@ -70,19 +87,3 @@ input:focus {
 	float: right;
 }
 
-li span {
-	background: #c61411;
-	height: 40px;
-	margin-right: 20px;
-	text-align: center;
-	color: white;
-	width: 0;
-	display: inline-block;
-	transition: 0.2s linear;
-	opacity: 0;
-}
-
-li:hover span {
-	width: 40px;
-	opacity: 1.0;
-}
