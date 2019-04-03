@@ -29,5 +29,6 @@ $("input[type='text']").keypress(function(event){
 });
 
 $("#toggle").click(function(){
-	("input[type='text']").fadeToggle();
+	console.log("Whoop");
+	$("input[type='text']").fadeToggle();
 });

@@ -4,10 +4,10 @@ body {
 	background: #7F7FD5; 
 	background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  
 	background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
-	/*background: #BE93C5;  
+/*	background: #BE93C5;  
 	background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  
-	background: linear-gradient(to right, #7BC6CC, #BE93C5); 
-*/
+	background: linear-gradient(to right, #7BC6CC, #BE93C5); */
+
 }
 
 h1 {
