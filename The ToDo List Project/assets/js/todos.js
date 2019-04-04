@@ -23,7 +23,7 @@ $("input[type='text']").keypress(function(event){
 		//Grabbing new text from input
 		var todoText = $(this).val();
 		$(this).val("");
-		//create a new LI and add to UL
+		//Create a new LI and add to UL
 		$("ul").append("<li><span><i class='far fa-trash-alt'></i></span> " + todoText + "</li>");
 	}
 });
