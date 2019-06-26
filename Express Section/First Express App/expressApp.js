@@ -15,6 +15,18 @@ app.get("/dog", function(req, res){
     res.send("Bark");
 });
 
+//Including Pathway Variables. Parameters
+app.get("/r/:subredditName/comments/:title", function(req, res){
+    var subreddit = req.params.subredditName;
+    res.send("Welcome to the " + subreddit + " Subreddit");
+});
+
+//Catch All. Routes that do not exist. 
+//Has to follow behind other routes. 
+app.get("*", function(req, res){
+    res.send("Nopity nope nope");
+});
+
 //Listening for Requests
 // app.listen(process.env.PORT, process.env.IP, function(){
 //     console.log("Server has started");
