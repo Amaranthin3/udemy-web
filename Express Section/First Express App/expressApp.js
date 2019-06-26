@@ -7,6 +7,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/bye", function(req, res){
+    console.log("Request Made");
     res.send("Bye");
 });
 
@@ -15,7 +16,10 @@ app.get("/dog", function(req, res){
 });
 
 //Listening for Requests
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("Server has started");
-});
+// app.listen(process.env.PORT, process.env.IP, function(){
+//     console.log("Server has started");
+// });
 
+app.listen(3000, () => {
+	console.log("Server listening on port 3000");
+});
