@@ -23,8 +23,8 @@ app.get("/posts", function(req, res){
     res.render("posts.ejs", {posts: posts});
 });
 
-app.get("/liefie", function(req, res){
-    res.render("liefie");
+app.get("*", function(req, res){
+    res.send("Sorry Boo Boo, I ain't what ya looking for");
 });
 
 app.listen(3000, () => {

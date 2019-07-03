@@ -7,7 +7,12 @@
 <body>
     <h1>The posts page</h1>
 
-    <%= posts %>
-    
+<!-- forEach loop to create entries from existing Array -->
+    <% posts.forEach(function(posts){ %>
+        <li> 
+            <%= posts.title %> - <strong> <%= posts.author %> </strong>
+        </li>
+    <% }); %>
+
 </body>
 </html>
