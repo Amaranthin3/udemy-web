@@ -1,3 +1,11 @@
-<h1>You fell in love with: </h1>
+<!-- Embedding JavaScript within HTML -->
+<h1>You fell in love with: <%= thingVar.toUpperCase() %> </h1>
+
+<!-- Removing '=' in <%=  %> LOGIC EJS TAG, Control Flow-->
+<% if(thingVar.toLowerCase() === "dog"){ %>
+    <p>Your selection is Dogs!</p>
+<% } else { %>
+    <p> Too bad ... should always go with cats man!</p>
+<% } %>
 
 <p>Love EJS File </p>
