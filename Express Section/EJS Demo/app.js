@@ -1,6 +1,8 @@
 var express = require("express");
 var app = express();
 
+app.set('view engine', 'ejs');
+
 app.get("/", function(req, res){
     res.render("home.ejs");
 });
@@ -19,6 +21,10 @@ app.get("/posts", function(req, res){
         {title: "Adventure", author: "Lewis"},
     ];
     res.render("posts.ejs", {posts: posts});
+});
+
+app.get("/liefie", function(req, res){
+    res.render("liefie");
 });
 
 app.listen(3000, () => {
