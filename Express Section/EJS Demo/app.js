@@ -1,7 +1,11 @@
 var express = require("express");
 var app = express();
 
+//Informing Express to expect to use files with ejs extension
 app.set('view engine', 'ejs');
+
+//Informing Express to serve the contents of the Public Directory - CSS
+app.use(express.static("public"));
 
 app.get("/", function(req, res){
     res.render("home.ejs");
