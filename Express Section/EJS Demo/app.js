@@ -14,7 +14,7 @@ app.get("/", function(req, res){
 // Passing variables/data in a object to render
 app.get("/fallinginlovewith/:thing", function(req, res){
     var thing = req.params.thing;
-    res.render("love.ejs", {thingVar: thing});
+    res.render("love", {thingVar: thing});
 });
 
 //Objects within an Array for posts
@@ -34,3 +34,5 @@ app.get("*", function(req, res){
 app.listen(3000, () => {
     console.log("Server is listening on Port 3000");
 });
+
+
