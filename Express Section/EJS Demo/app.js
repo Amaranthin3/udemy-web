@@ -12,13 +12,13 @@ app.get("/fallinginlovewith/:thing", function(req, res){
 });
 
 //Objects within an Array for posts
-app.get("/entries", function(req, res){
+app.get("/posts", function(req, res){
     var posts = [
         {title: "Mysteries", author: "Rowling"},
         {title: "Crime", author: "King"},
         {title: "Adventure", author: "Lewis"},
     ];
-    res.render("entries.ejs", {posts: posts});
+    res.render("posts.ejs", {posts: posts});
 });
 
 app.listen(3000, () => {
