@@ -2,18 +2,17 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-    <h1>The posts page</h1>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>The posts page</h1>
 
-<!-- forEach loop to create entries from existing Array -->
-    <% posts.forEach(function(posts){ %>
-        <li> 
-            <%= posts.title %> - <strong> <%= posts.author %> </strong>
-        </li>
-    <% }); %>
-
-</body>
+    <!-- forEach loop to create entries from existing Array -->
+        <% posts.forEach(function(posts){ %>
+            <li> 
+                <%= posts.title %> - <strong> <%= posts.author %> </strong>
+            </li>
+        <% }); %>
+    </body>
 </html>
