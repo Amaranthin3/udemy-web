@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var bodyParser = ("body-parser");
+var bodyParser = require("body-parser");
 
 app.set("view engine", "ejs");
 
