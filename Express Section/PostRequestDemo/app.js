@@ -1,15 +1,20 @@
 var express = require("express");
 var app = express();
+var bodyParser = ("body-parser");
 
 app.set("view engine", "ejs");
 
 app.use(express.static("public"));
+//install body-parser. Instruct Express to use package
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
     res.render("home");
 });
 
+//Extracting data from the form named newfriend
 app.post("/addfriend", function(req, res){
+    console.log(req.body.newfriend);
     res.send("Welcome to the post");
 });
 
