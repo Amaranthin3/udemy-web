@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Friends List</title>
+    </head>
+    <body> 
+        <h1>Friends List</h1>
+    <!-- Looping through var friends to create a LI -->
+    <!-- Passing in the Data in the LI -->
+        <% friends.forEach(function(friend){ %>
+            <li> <%= friend %> </li>
+        <% }); %>
+
+        <div>
+            <form action="/addfriend" method="POST">
+                <input type="text" placeholder="Insert Name">
+                <button>Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
