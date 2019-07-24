@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 var friends = ["Marshall","Barney","Ted","Lilly","Robin"];
 
 app.get("/", function(req, res){
+    app.get("/", function(req, res){
     res.render("home");
 });
 
@@ -33,4 +34,4 @@ app.get("*", function(req, res){
 
 app.listen(3000, () => {
     console.log("Server is listening on Server 3000");
-});
+}); 
