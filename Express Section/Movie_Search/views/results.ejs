@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <titel>Results Page</titel>
+        <title>Results Page</title>
     </head>
     <body>
-        
+        <h1>Results Home Page</h1>
+
+        <% data["Search"].forEach(function(movie){ %>
+            <li> <%= movie["Title"] %> </li>
+        <% }); %>
+
+
+
     </body>
 
 </html>
