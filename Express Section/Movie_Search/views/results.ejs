@@ -6,11 +6,20 @@
     <body>
         <h1>Results Home Page</h1>
 
-        <% data["Search"].forEach(function(movie){ %>
-            <li> <%= movie["Title"] %> </li>
-        <% }); %>
+        <!-- Displaying Data from the API Request -->
+        <!-- Movie + Year is Displayed -->
+        <ul> 
+            <% data["Search"].forEach(function(movie){ %>
+                <li> 
+                    <strong>
+                        <%= movie["Title"] %>
+                    </strong> 
+                        - <%= movie["Year"] %> 
+                </li>
+            <% }); %>
+        </ul>
 
-
+        <a href="/">Search Again!</a>
 
     </body>
 
