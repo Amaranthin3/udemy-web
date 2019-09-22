@@ -1,7 +1,13 @@
 //baseline for webpack config
+var path = require("path");
+
 module.exports = {
-    entry: "app.js",
-    output: "build/app.bundle.js",
+    entry: path.resolve(__dirname, "app.js"),
+    output: {
+        path: path.resolve(__dirname, "build"),
+        filename: "app.bundle.js"
+
+    },
     module : {
         rules: [
             {
