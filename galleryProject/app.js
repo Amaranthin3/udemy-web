@@ -6,7 +6,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/home", function(req, res){
-    res.render(home.ejs);
+    res.render("home");
 });
 
 app.get("*", function(req, res){
