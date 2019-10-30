@@ -1,6 +1,7 @@
 /* Jumbotron image sizing  */
 #header {
-   background: url("assets/header.jpg") center center / cover no-repeat;
-
+     background: url("/assets/header.jpg") center center / cover no-repeat;
 }
+
+
 
