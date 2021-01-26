@@ -43,9 +43,10 @@
 //     console.log("Incorrect password length!");
 // };
 
-const password = "p@ss";
+//logical operators example
+const password = "p@sswoooooord";
 
-if(password.length >= 12){
+if(password.length >= 12 && password.includes("@")){
     console.log("Very strong password");
 } else if(password.length >= 6){
     console.log("Medium strength password");
