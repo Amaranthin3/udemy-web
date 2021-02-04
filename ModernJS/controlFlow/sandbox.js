@@ -44,11 +44,11 @@
 // };
 
 //logical operators example
-const password = "p@sswoooooord";
+const password = "p@ss";
 
 if(password.length >= 12 && password.includes("@")){
     console.log("Very strong password");
-} else if(password.length >= 6){
+} else if(password.length >= 6 || password.includes("@")){
     console.log("Medium strength password");
 } else {
     console.log("Very weak password");
