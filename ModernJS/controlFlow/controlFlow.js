@@ -79,14 +79,20 @@ const grade = "A";
 switch(grade){
     case "A" :
         console.log("You got an A!");
+        break; 
     case "B" :
         console.log("You got a B!");
+        break; 
     case "C" :
         console.log("You got a B!");
+        break; 
     case "D" :
         console.log("You got a D!");
+        break; 
     case "F" :
         console.log("Sorry you failed");
+        break; 
     default : 
         console.log("Invalid Entry");
+        break; 
 };
