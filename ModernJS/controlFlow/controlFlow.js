@@ -74,7 +74,7 @@
 
 // Switch Statements
 
-const grade = "A";
+const grade = "C";
 
 switch(grade){
     case "A" :
@@ -84,7 +84,7 @@ switch(grade){
         console.log("You got a B!");
         break; 
     case "C" :
-        console.log("You got a B!");
+        console.log("You got a C!");
         break; 
     case "D" :
         console.log("You got a D!");
