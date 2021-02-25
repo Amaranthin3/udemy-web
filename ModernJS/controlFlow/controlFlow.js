@@ -74,25 +74,26 @@
 
 // Switch Statements
 
-const grade = "C";
+// const grade = "C";
 
-switch(grade){
-    case "A" :
-        console.log("You got an A!");
-        break; 
-    case "B" :
-        console.log("You got a B!");
-        break; 
-    case "C" :
-        console.log("You got a C!");
-        break; 
-    case "D" :
-        console.log("You got a D!");
-        break; 
-    case "F" :
-        console.log("Sorry you failed");
-        break; 
-    default : 
-        console.log("Invalid Entry");
-        break; 
-};
+// switch(grade){
+//     case "A" :
+//         console.log("You got an A!");
+//         break; 
+//     case "B" :
+//         console.log("You got a B!");
+//         break; 
+//     case "C" :
+//         console.log("You got a C!");
+//         break; 
+//     case "D" :
+//         console.log("You got a D!");
+//         break; 
+//     case "F" :
+//         console.log("Sorry you failed");
+//         break; 
+//     default : 
+//         console.log("Invalid Entry");
+//         break; 
+// };
+
